@@ -10,7 +10,7 @@
     <p id="description">Thank you for taking my survey!</p>
     <h2>Tell us about yourself</h2>
     <form id="survey-form">
-        
+
         <label for="name-label" id="name-label">Name</label>
         <input type="text" id="name" placeholder="Your Name Here (Required)" required>
         
@@ -21,13 +21,35 @@
         <input type="number" id="number" placeholder="1-(555-555-555)" min="100000000" max="999999999">
         
         <h2>Favorite sandwich?</h2>
-        <select name="food-choice" id="dropdown">
-            <option value="grilledcheese">Grilled Cheese</option>
-            <option value="tomato">Tomato Sandwich</option>
-            <option value="blt">Bacon Lettuce Tomato</option>
-            <option value="club">Club Sandwich</option>
-        </select>
-    
+            <select name="food-choice" id="dropdown">
+                <option value="grilledcheese">Grilled Cheese</option>
+                <option value="tomato">Tomato Sandwich</option>
+                <option value="blt">Bacon Lettuce Tomato</option>
+                <option value="club">Club Sandwich</option>
+            </select>
+
+        <h2>Are you attending Sandwich Con 2024?</h2>
+            <input type="radio" id="con_yes" name="attending" value="yes" />
+            <label for="con_yes">Yes</label>
+            
+            <input type="radio" id="con_maybe" name="attending" value="maybe" />
+            <label for="con_maybe">Undecided</label>
+            
+            <input type="radio" id="con_no" name="attending" value="no" />
+            <label for="con_no">No</label>
+        
+        <h2>Favorite Chips?</h2>
+            <input type="checkbox" id="plain" name="chips" value="plain" />
+            <label for="plain">Regular potato chips</label>
+            
+            <input type="checkbox" id="sourcream-onion" name="chips" value="sourcream-onion" />
+            <label for="sourcream-onion">Sourcream and Onion</label>
+            
+            <input type="checkbox" id="ketchup" name="chips" value="ketchup" />
+            <label for="ketchup">Ketchup</label>
+
+            <input type="checkbox" id="bbq" name="chips" value="bbq" />
+            <label for="bbq">BBQ</label>
     </form>
 </body>
 </html>
