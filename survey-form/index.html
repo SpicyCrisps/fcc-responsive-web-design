@@ -8,15 +8,26 @@
 <body>
     <h1 id="title">My Survey Form</h1>
     <p id="description">Thank you for taking my survey!</p>
+    <h2>Tell us about yourself</h2>
     <form id="survey-form">
-        <label for="frname">First Name</label>
-        <input type="text" id="name">
-        <label for="laname">Last Name</label>
-        <input type="text" id="laname">
-        <label for="email">Email</label>
-        <input type="text" id="email">
-        <label for="number">Phone Number</label>
-        <input type="number" id="number" placeholder="1-(555-555-555)">   
+        
+        <label for="name-label" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Your Name Here (Required)" required>
+        
+        <label for="email-label" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Your Email Here (Required)" required>
+       
+        <label for="number-label" id="number-label">Phone Number</label>
+        <input type="number" id="number" placeholder="1-(555-555-555)" min="100000000" max="999999999">
+        
+        <h2>Favorite sandwich?</h2>
+        <select name="food-choice" id="dropdown">
+            <option value="grilledcheese">Grilled Cheese</option>
+            <option value="tomato">Tomato Sandwich</option>
+            <option value="blt">Bacon Lettuce Tomato</option>
+            <option value="club">Club Sandwich</option>
+        </select>
+    
     </form>
 </body>
 </html>
